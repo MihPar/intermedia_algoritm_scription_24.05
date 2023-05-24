@@ -2,7 +2,7 @@ function diffArray(arr1, arr2) {
     const newArr = [];
    let result = arr1.concat(arr2)
    for(let i = 0; i < result.length; i++) {
-     if(result.indexOf(result[i]) ==result.lastIndexOf(result[i])) {
+     if(result.indexOf(result[i]) == result.lastIndexOf(result[i])) {
        newArr.push(result[i])
      }
    }
