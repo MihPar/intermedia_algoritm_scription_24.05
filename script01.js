@@ -1,14 +1,27 @@
-function sumAll(arr) {
-    let biggerNumber = Math.max(...arr);
-    let smallerNumber = Math.min(...arr)
+function convertToRoman(num) {
+    var roman = {
+      M: 1000,
+      CM: 900,
+      D: 500,
+      CD: 400,
+      C: 100,
+      XC: 90,
+      L: 50,
+      XL: 40,
+      X: 10,
+      IX: 9,
+      V: 5,
+      IV: 4,
+      I: 1
+    };
+    var str = '';
   
-    let total = biggerNumber + smallerNumber
-  
-    for (let i = smallerNumber + 1; i < biggerNumber; i++) {
-      total += i
+    for (var i of Object.keys(roman)) {
+      var q = Math.floor(num / roman[i]);
+      num -= q * roman[i];
+      str += i.repeat(q);
     }
   
-    return total
+    return str;
   }
-  
-  sumAll([1, 4]);
+  console.log(convertToRoman(1000))

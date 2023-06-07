@@ -1,7 +1,19 @@
-Sum All Numbers in a Range
-We'll pass you an array of two numbers. Return the sum of those two numbers plus 
-the sum of all the numbers between them. The lowest number will not always come first.
+Roman Numeral Converter
+Convert the given number into a roman numeral.
 
-For example, sumAll([4,1]) should return 10 because sum of all the numbers between 
-1 and 4 (both inclusive) is 10.
+Roman numerals	Arabic numerals
+M	1000
+CM	900
+D	500
+CD	400
+C	100
+XC	90
+L	50
+XL	40
+X	10
+IX	9
+V	5
+IV	4
+I	1
+All roman numerals answers should be provided in upper-case.
 
